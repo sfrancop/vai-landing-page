@@ -1,0 +1,130 @@
+.c-banner{
+    height: 15%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.c-banner img{
+    max-width: 50%;
+
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.c-form{
+    background-color: #2ca5ff;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-form-form{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    color: #333333;
+    font-size: 14px;
+  }
+
+TextArea{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    color: #333333;
+    font-size: 14px;
+}
+
+input:hover{
+    background-color: #efefef;
+  }
+
+.c-form-form-submit{
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+    width: 60%;
+    margin-top: 10;
+    margin-bottom: 10;
+    margin-left: 24%;
+    max-width: 50%;
+    max-height: 50%;
+    background-color: white;
+    color: #2ca5ff;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+}
+
+.c-form-form-submit:focus .text_2{
+    opacity: 1;
+}
+
+.c-form-form-submit:focus .text_1{
+    opacity: 0;
+}
+
+.text_1{
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+}
+
+.text_2{
+    opacity: 0;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+}
+
+.c-form-form-submit:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .formulario-chat{
+        width: 250px !important;
+        height: 400px!important;
+        bottom: 150px !important;
+        right: 30px !important;
+    }
+    .c-form input{
+        height:40px;
+    }
+
+}

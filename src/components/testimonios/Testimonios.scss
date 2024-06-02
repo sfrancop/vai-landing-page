@@ -1,0 +1,212 @@
+$azul: #2ca5ff;
+$gris: rgb(239,239,238);
+$grisc:rgb(225, 225, 225);
+.testimonios{
+    .imagen-l{
+        position: absolute;
+        width: 600px;
+        bottom: -10px;
+        left: 60px;
+        img{
+            width: 100%;
+        }
+    }
+    .b-azul{
+        background-color: $azul;
+        height: 100vh;
+    }
+    .separador{
+        border-top: 3px solid white;
+        height: 80%;
+        margin-bottom: 30px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .t-contenedor{
+        overflow: hidden;
+        display: flex;
+        height: 100vh;
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 0 30px;
+    }
+    .tarjetas{
+        border-top: 3px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10vh 20px;
+        height: auto;
+        .tarjeta{
+            border-radius: 30px;
+            background-color: $gris;
+            width: 24%;
+            height: 300px;
+            padding: 10px 25px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            .top{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 50%;
+                .numero{
+                    background-color: $azul;
+                    color: white;
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 65px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    font-size: 50px;
+                }
+                .mini{
+                    font-size: 35px;
+                }
+                .negritas{
+                    font-weight: bold;
+                    font-size: 35px;
+                    width: 80px;
+                    line-height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .bottom{
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .negritas{
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                .negrita2{
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+                .azul{
+                    color: $azul;
+                }
+            }
+            a{
+                color: $grisc;
+                max-width: 400px;
+                font-size: 10px;
+                line-height: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+    .bogota{
+        width: 100%;
+        padding: 10px 0;
+        span{
+            border: $azul 3px solid;
+            padding: 1px 8px;
+            border-radius: 20px;
+        }
+    }
+    .pie, .pie2, .pie3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 5px;
+    }
+    .pie2{
+        justify-content: end !important;
+    }
+    .pie3{
+        justify-content:left !important;
+    }
+    .logo{
+        width: 120px;
+        img{
+            width: 100%;
+        }
+    }
+    .t-l{
+        margin: 10% auto 10% 0 !important;
+    }
+    .t-l-i{
+        right: 60px !important;
+        left: auto;
+    }
+    .testimonio{
+        background-color: white;
+        border-radius: 30px;
+        margin: 10% 0px 10% auto;
+        padding: 30px;
+        width: 60%;
+        .texto{
+            font-size: 30px;
+            text-align: center;
+            span{
+                border: $azul 4px solid;
+                padding: 1px 8px;
+                border-radius: 40px;
+            }
+        }
+        .auto{
+            text-align: end;
+            font-size: 30px;
+            color: $azul;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .testimonios{
+        height: auto;
+        .tarjetas{
+            .tarjeta{
+                width: 300px;
+                height: 210px;
+                .top{
+                    justify-content: space-evenly;
+                    .numero{
+                        width: 100px;
+                        height: 100px;
+                        font-size: 35px;
+                    }
+                    .negritas{
+                        font-size: 28px;
+                    }
+                }
+            }
+            
+        }
+        .b-azul{
+            height: auto;
+        }
+        .t-contenedor{
+            height: auto;
+            .testimonio{
+                display: flex;
+                flex-direction: column;
+                margin: 10px auto;
+                width: 90%;
+                padding: 5px;
+                .texto{
+                    font-size: 18px;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+            .separador{
+                height: 100%;
+            }
+            
+        }
+        .imagen-l{
+               display: none; 
+        }
+        
+    }
+}

@@ -1,0 +1,85 @@
+.i-container{
+    display: flex;
+    height: 51rem;
+    padding-top: 0;
+    gap: 1rem;
+}
+
+.i-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.i-left>p{
+    margin-left:  90px;
+    font-size: 42.5px;
+}
+
+.i-right{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/Imagen1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.i-icon>i{
+    color: white;
+    font-size: 3.8em;
+    background-size: 10px;
+    right: 0px;
+
+}
+
+.i-icons{
+    position: fixed;
+    right: 0;
+    width:55px;
+    margin-top: 14.5rem;
+    padding: 1rem;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-right: 90px;
+    align-items: center;
+    position: flex;
+}
+
+.i-icon>i:hover{
+    color: #efefef;
+    cursor: pointer;
+}
+
+p{
+    color: #333333;
+}
+
+.i-historias{
+    border: 5px solid #2ca5ff;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .i-left>p{
+        margin-left:  20px;
+        font-size: 32.5px;
+        text-align: center;
+    }
+    .i-container{
+        padding-top: 100px;
+        flex-direction: column;
+        height: calc(100vh - 100px);
+        width: 100%;
+    }
+    .i-right{
+        background-position: bottom;
+    }
+    .i-icons{
+        display: none;
+    }
+}

@@ -1,0 +1,110 @@
+.q-container{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 51rem;
+    gap: 1rem;
+}
+.t-black{
+    color: black;
+}
+
+.q-left{
+    width: 52.55%;
+    background-size: cover;
+    justify-content: center;
+
+}
+
+.q-title{
+    margin-left: 90px;
+    font-size: 42.5px;
+    color: #333333;
+}
+
+.q-left-up{
+    height: 8%;
+}
+
+.q-left-down{
+
+    height: 92%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/celular.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    background-position-x: left;
+
+    
+}
+
+.q-right{
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    margin-right: 90px;
+}
+
+
+
+.q-right-text{
+    border: 5px solid #2ca5ff;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+
+.q-right-text-paragraph{
+    gap: 2rem;
+    align-items: center;
+    text-align: justify;
+}
+.q-right-text-paragraph span{
+    border: #2ca5ff 2px solid;
+    border-radius: 50px;
+    padding: 1px 2px;
+}
+
+.q-right-text-title{
+    color: #2ca5ff;
+    border-radius: 30px;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.text-strong{
+    background-color: #333333;
+    width: fit-content;
+    color: white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .q-container{
+        flex-direction:column;
+        height: auto;
+        margin: 60px 30px;
+    }
+    .q-right, 
+    .q-left,
+    .q-left-up,
+    .q-title{
+        width: 100% !important;
+    }
+    .q-left-down{
+        display: none;
+    }
+    .q-title{
+        margin: 0;
+        font-size: 28px;
+        text-align: center;
+    }
+
+}
